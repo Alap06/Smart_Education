@@ -1,0 +1,220 @@
+<!--
+    Creation par Ala Amara
+    client  : prof tunisiene
+    date    : 2023-11-08
+    version : 1.0
+-->
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Éducatif</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Personnalisation des couleurs */
+        :root {
+            --primary-color: #4299e1; /* Bleu principal */
+            --secondary-color: #38b2ac; /* Vert secondaire */
+            --text-color: #2d3748; /* Gris foncé */
+        }
+        img {
+  transition: transform 0.2s ease;
+}
+
+img:hover {
+  transform: scale(1.5);
+}
+    </style>
+</head>
+<body class="bg-gray-100 font-sans text-gray-800">
+
+    <!-- Navbar -->
+<nav class="bg-white shadow-lg p-4 flex justify-between items-center">
+    <div class="ml-4">
+        <img src="image/logo-removebg-preview (1).png" alt="Logo" class="h-12 w-12">
+    </div>
+    <div class="mr-7 space-x-6 gap-2"> <!-- Augmentation de l'espacement entre les liens -->
+        <a href="#l2" class="text-gray-700 hover:text-blue-600 transition duration-300">تواصل معنا</a>
+        <a href="#l1" class="text-gray-700 hover:text-blue-600 transition duration-300">أعمالنا</a>
+    </div>                        
+</nav>
+
+    <!-- Slider avec texte et logo -->
+    <section class="relative overflow-hidden">
+        <!-- Conteneur avec image de fond -->
+        <div 
+            class="absolute inset-0 bg-cover bg-center" 
+            style="background-image: url('image/image_font.png');"
+        >
+            <!-- Superposition noire transparente -->
+            <div class="absolute inset-0 bg-black opacity-60"></div>
+        </div>
+    
+        <!-- Contenu principal centré -->
+        <div class="relative z-10 flex flex-col justify-center items-center min-h-screen text-center text-white">
+            <!-- Logo central -->
+            <img 
+                src="image/logo-removebg-preview (1).png" 
+                alt="Logo central" 
+                class="w-48 h-auto mb-8 sm:w-64 lg:w-80 mx-auto"
+            >
+            <!-- Titre -->
+            <h1 class="text-4xl font-bold">
+                التعليم الذكي
+            </h1>
+            <!-- Texte descriptif -->
+            <p class="text-xl max-w-md mx-auto mt-4">
+                من أجل تعليم نوعي
+            </p>
+        </div>
+    </section>
+
+    <!-- Section "Malna Tawasol Ma'ana" -->
+<section class="bg-gray-100 py-16">
+    <div class="container mx-auto px-4">
+        <!-- Titre principal -->
+        <h2  class="text-3xl font-bold text-center mb-8 " style="color: rgb(138, 43, 226);">أعمالنا</h2>
+        
+        <!-- Sous-titre -->
+        <h3 class="text-2xl font-semibold text-center text-gray-700 mb-6 text-right">
+            في عالمنا المتسارع، بات من الضروري اعتماد أساليب تعليمية حديثة تلبي احتياجات العصر
+        </h3>
+
+        <!-- Texte descriptif -->
+        <p class="text-2xl font-semibold text-center text-gray-700 mb-6 text-right">
+         مشروع "التعليم الذكي" يسعى إلى تحسين جودة التعليم من خلال تسخير تقنيات الذكاء الاصطناعي لتقديم تجربة تعليمية مبتكرة شاملة وفعالة
+        </p>
+    </div>
+</section>
+
+    <!-- Sections centrales -->
+    <section class="container mx-auto py-16 px-4">
+        <!-- Conteneur unique en une colonne -->
+        <div class="space-y-8">
+            <!-- Carte 1 : أهداف المشروع -->
+            <div class="bg-white shadow-md rounded-lg p-6">
+                <h2 class="text-2xl font-bold text-center mb-6 " style="color: rgb(138, 43, 226);">أهداف المشروع</h2>
+                <div dir="rtl" class="text-gray-700 text-right leading-relaxed">
+                    <ul class="list-disc list-inside pr-5">
+                        <li>استخدام التقنيات الذكية لإنشاء تجارب تعليمية مخصصة تتناسب مع أساليب تعلم كل متعلم.</li>
+                        <li>تشجيع التعلم المستقل من خلال توفير بيئة تعليمية تفاعلية تسمح للتلاميذ بالتعلم بمرونة ووفقًا لاحتياجاتهم الخاصة.</li>
+                        <li>دعم المعلمين بتزويدهم بأدوات ذكية لتحسين تخطيط الدروس وتقييم المتعلمين وتقديم الدعم الفردي.</li>
+                        <li>بناء نظام تعليمي شامل يوفر الدعم اللازم لجميع المتعلمين لتحقيق أقصى إمكاناتهم.</li>
+                        <li>غرس حب التعلم المستمر لدى المتعلمين وتزويدهم بالمهارات اللازمة لمواكبة التطورات المستمرة.</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <!-- Carte 2 : الرّهانات -->
+            <div class="bg-white shadow-md rounded-lg p-6">
+                <h2 class="text-2xl font-bold text-center mb-6 " style="color: rgb(138, 43, 226);">الرّهانات</h2>
+                <div dir="rtl" class="text-gray-700 text-right leading-relaxed">
+                    <p>
+                        يراهن مشروعنا "التعليم الذكي" على <strong class="font-bold">الفرص التالية:</strong>
+                    </p>
+                    <ul class="list-disc list-inside pr-5">
+                        <li><strong class="font-bold">تحسين جودة التعلم:</strong> تحقيق نتائج أفضل على مستوى التحصيل الدراسي.</li>
+                        <li><strong class="font-bold">تقليص الفجوة التعليمية:</strong> تقليل الفوارق التعليمية بين مختلف الفئات الاجتماعية.</li>
+                        <li><strong class="font-bold">زيادة التفاعل:</strong> جعل العملية التعليمية أكثر تحفيزاً على المشاركة الفعالة.</li>
+                        <li><strong class="font-bold">تعزيز الإبداع:</strong> دعم التفكير النقدي والابتكار في صفوف المتعلمين.</li>
+                    </ul>
+                    <p>
+                        يعد مشروع "التعليم الذكي" مبادرة تهدف إلى إحداث تحول جذري في نظام التعليم ويسعى إلى تجويد مخرجات التعليم لبناء طفل متوازن لمستقبل واعد.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Section avec trois mots et logos -->
+<section class="bg-gray-100 py-16">
+    <div class="container mx-auto px-4 ">
+        <!-- Conteneur principal -->
+        <div class="flex flex-col md:flex-row justify-center items-center space-y-12 md:space-y-0 md:space-x-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+           <!-- Carte 1 : تقدّم -->
+<div class="flex flex-col items-center text-center bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition-shadow duration-300 hover:border-blue-500 border-2">
+    <img src="image/temp.png" alt="Logo Taqueed" class="w-16 h-16 mb-4 transform hover:scale-110 transition-transform duration-300">
+    <h3 class="text-xl font-bold text-red-400 " style="color: rgb(138, 43, 226);">تقدّم</h3>
+</div>
+
+<!-- Carte 2 : اطمح -->
+<div class="flex flex-col items-center text-center bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition-shadow duration-300 hover:border-blue-500 border-2">
+    <img src="image/education_logo.png" alt="Logo Itmeh" class="w-16 h-16 mb-4 transform hover:scale-110 transition-transform duration-300">
+    <h3 class="text-xl font-bold text-gray-800" style="color: rgb(138, 43, 226);">اطمح</h3>
+</div>
+
+<!-- Carte 3 : تعلّم -->
+<div class="flex flex-col items-center text-center bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition-shadow duration-300 hover:border-blue-500 border-2">
+    <img src="image/livre.png" alt="Logo Taallam" class="w-16 h-16 mb-4 transform hover:scale-110 transition-transform duration-300">
+    <h3 class="text-xl font-bold text-gray-800" style="color: rgb(138, 43, 226);">تعلّم</h3>
+</div>
+        </div>
+    </div>
+</section>
+
+    <!-- Livres éducatifs -->
+    <section class="bg-gray-100 py-16" id="l1">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8" style="color: rgb(138, 43, 226);">تعلم بذكاء</h2>
+            <p class="text-2xl font-semibold text-center text-gray-700 mb-3">تجدون أعمالنا المنشورة في هذا الرابط</p>
+            <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-8">
+                <div class="bg-white shadow-md rounded-lg p-6 flex flex-col items-center">
+                    <a href="https://heyzine.com/flip-book/56b44aac54.html"><img src="image/livre1rec.png" alt="Livre 1" class="justify-center w-24 h-24 mb-4 mt-3"></a>
+                    <h3 class="text-lg font-bold">  كتاب سفيري إلى عالم الحقوق</h3>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-6 flex flex-col items-center">
+                    <a href="https://heyzine.com/flip-book/58cc5919c4.html"><img src="image/livre2rec.png" alt="Livre 2" class="justify-center w-24 h-24 mb-4 mt-3"></a>
+                    <h3 class="text-lg font-bold">الذكاء الاصطناعي و التعليم الابتدائي - دليل المعلم</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cartes utilisateurs -->
+    <section class="container mx-auto py-16 px-4">
+        <h2 class="text-3xl font-bold text-center mb-8" style="color: rgb(138, 43, 226);"> تعرف علينا  </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white shadow-md rounded-lg p-6">
+                <a href="#"><img src="image/femme2.png" alt="Utilisateur 1" class="rounded-full w-17 h-16 mb-4"></a>
+                <h3 class="text-lg font-bold">سوار الحرّوشي</h3>
+                <p class="text-gray-600">"طالبة بالمعهد العالي للغات بقابس ، ناشطة بالمجتمع المدني التونسي"</p>
+            </div>
+            <div class="bg-white shadow-md rounded-lg p-6">
+                <a href="#"><img src="image/femme1.png" alt="Utilisateur 2" class="rounded-full w-17 h-16 mb-4"></a>
+                <h3 class="text-lg font-bold">رنا حاجي</h3>
+                <p class="text-gray-600">"طالبة بالمعهد العالي للغات بقابس ، رئيسة نادي سفراء التراث"</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulaire de contact -->
+<section class="bg-gray-100 py-16">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8" style="color: rgb(138, 43, 226);">اتصل بنا</h2>
+        <form class="max-w-lg mx-auto space-y-4" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="ba340806-9c75-43f7-86b3-873811b1e06d">
+            <input type="text" name="name" placeholder="Nom complet" class="w-full px-4 py-2 border rounded-md" required>
+            <input type="email" name="email" placeholder="Adresse email" class="w-full px-4 py-2 border rounded-md" required>
+            <textarea name="message" placeholder="Message" class="w-full px-4 py-2 border rounded-md" required></textarea>
+            <button type="submit" class="w-full bg-blue-600 text-white font-bold py-2 rounded-md hover:bg-blue-700 transition duration-300">Envoyer</button>
+        </form>
+    </div>
+</section>
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <p id="l2" class="text-center">   تواصل معنا</p>
+            <div class="flex justify-center mt-4 space-x-4">
+                <a href="mailto:ContactPersone1@gmail.com" class="hover:text-blue-400 transition duration-300">Email :  ContactPersone1@gmail.com</a>
+            </div>
+            <div class="flex justify-center mt-4 space-x-4">
+                <a href="mailto:ContactPersone1@gmail.com" class="hover:text-blue-400 transition duration-300">Email :  ContactPersone2@gmail.com</a>
+            </div>
+            <p class="text-center mt-4">© 2025 Plateforme Éducative. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
